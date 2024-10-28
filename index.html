@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="wiidth=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DOCUMENT</title>
+</head>
+<body>
+  <header>
+  <div class="image-container" id="logo">
+    <img src="imágenes/iconos/gastronomía.png" alt="gastronomía">
+  </div>
+  </header>
+  <section id="hero">
+    <div class="hero-container" id="comida">
+      <img src="imágenes/comida.jpg" alt="comida">    
+      </div> 
+    <div class="information-container">
+      <div class="image-container" id="foto">
+        <img src="imágenes/Andrés.jpg" alt="foto andres">
+      </div>
+      <div class="information">
+        <h1>
+          José Andrés Torres Urbina
+        </h1>
+        <span>
+          @AndreTo-U
+        </span>
+        <p> Chef profesional |Universidad de La sabana|responsable y dedicado|Le Petit Nice</p>
+      </div>
+    </div>
+  </section>
+    <main>
+      <p>
+         Soy Andrés torres Con más de 10 años de experiencia en el arte culinario, me he destacado como uno de los referentes en la alta gastronomía, combinando innovación y tradición en cada uno de mis platos. Graduado en la universidad de la sambada y con formación internacional en repostería en Francia, su enfoque se centra en la creación de experiencias gastronómicas únicas, basadas en el respeto por los ingredientes locales y las técnicas contemporáneas.
+      </p>
+      <ul class="social-icons">
+         <li>
+           <a href="https://www.westernunion.com/blog/es/las-7-mejores-comidas-colombianas-que-debes-probar/" class= "social-icon" id="linkedin"><img src="imágenes/iconos/linkedin.png" alt="linkedin"></a> 
+         </li>
+        <li>
+           <a href="https://m.youtube.com/@AndreTo-U" class="social-icon" id="YouTube"><img src="imágenes/iconos/YouTube.png" alt="YouTube"></a> 
+        </li>
+        <li>
+           <a href="https://youtube.com/@aleminero?si=nXfYZ-sLM32mueMz" class="social-icon" id="twitter"><img src="imágenes/iconos/twitter.png" alt="twitter"></a> 
+        </li>
+      </ul>
+    <div id="visit-counter">
+<p>esta pagina ha sido visitada <span id="contador">0</span>veces</p>
+    </div>
+    </main>
+   <script>
+if (localStorage.getItem('visitas')){
+  var visitas = parseInt(localStorage.getItem('visitas')) + 1;
+  } else {
+  var visitas = 1;
+  }
+
+    localStorage.setItem('visitas',visitas);
+
+    document.getElementById('contador').textContent = visitas;
+   </script>
+</div>
+</div>
+</body>
+</html>
